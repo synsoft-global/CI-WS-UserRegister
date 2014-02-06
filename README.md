@@ -25,7 +25,7 @@ Call the webservice controller and post the JSON string in given format.
 
 
 Controller will pass the post data to model. Model will excute query and return the result.
-$insert = array(
+	$insert = array(
 				'username'=>$arr->username,	
 				'email'=>$arr->email,
 				'password'=>md5($arr->password),
@@ -33,7 +33,7 @@ $insert = array(
 				'lng'=>$arr->lng,
 				'register_date'=>date('Y-m-d H:i:s')
 			);
-$this->db->insert('user',$insert);
+	$this->db->insert('user',$insert);
 
 
 Return the excuted result.
