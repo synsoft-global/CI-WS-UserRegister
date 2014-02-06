@@ -38,12 +38,14 @@ Controller will pass the post data to model. Model will excute query and return 
 </pre>
 
 Return the excuted result.
-
+<pre>
 if($this->db->insert('user',$insert)){	
 	$data['register'] = "User register successfully";
 }else{
 	$data['register'] = "Unable to register user";
 }
+</pre>
+
 
 Support
 -------------------------------------------------------------
