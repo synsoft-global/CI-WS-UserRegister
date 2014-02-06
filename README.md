@@ -20,9 +20,9 @@ Manual Installation
 Usage
 -------------------------------------------------------------
 Call the webservice controller and post the JSON string in given format.
-
+<pre>
 {"method":"registeruser","email":"eample@example.com","username":"syn123","password":"123456","lat":37.332331,"lng":-122.031219}
-
+</pre>
 
 Controller will pass the post data to model. Model will excute query and return the result.
 <pre>
@@ -37,7 +37,7 @@ Controller will pass the post data to model. Model will excute query and return 
 	$this->db->insert('user',$insert);
 </pre>
 
-Return the excuted result.
+Returns the excuted result.
 <pre>
 if($this->db->insert('user',$insert)){	
 	$data['register'] = "User register successfully";
