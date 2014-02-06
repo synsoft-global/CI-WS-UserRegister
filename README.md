@@ -25,6 +25,7 @@ Call the webservice controller and post the JSON string in given format.
 
 
 Controller will pass the post data to model. Model will excute query and return the result.
+<pre>
 	$insert = array(
 				'username'=>$arr->username,	
 				'email'=>$arr->email,
@@ -34,9 +35,10 @@ Controller will pass the post data to model. Model will excute query and return 
 				'register_date'=>date('Y-m-d H:i:s')
 			);
 	$this->db->insert('user',$insert);
-
+</pre>
 
 Return the excuted result.
+
 if($this->db->insert('user',$insert)){	
 	$data['register'] = "User register successfully";
 }else{
